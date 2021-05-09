@@ -3,6 +3,9 @@
 
 :root {
     --primary-color: #78AB46;
+    --secondary-color: #013220;
+    --dark-color: green;
+    --light-color: lightgray;
 }
 * {
     box-sizing:border-box;
@@ -174,15 +177,45 @@ img {
     text-align: center;
     margin: 18px 10px 40px;
     transition: transform 0.2s ease-in;
+    width: 255px;
+    /*height: 236px;*/
 }
 
-.testimonials .card h4 {
-    font-size: 20px;
+.testimonials .card img {
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+    position:relative;
+}
+
+.img-container {
+    display: block;
+    text-align: center;
+    position: relative; /*needed this for the line to go behind image*/
+}
+
+.img-container::before {
+    content: " ";
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    height: 1px;
+    background: lightgray;
+}
+
+.testimonials .card p {
+    font-size: 13px;
     margin-bottom: 10px;
+    height: 80px;
 }
 .testimonials .card:hover {
     transform: translateY(-15px)
 }
+
+
+
+
 
 /* Utilities*/
 .container {
@@ -330,4 +363,32 @@ img {
 
 .py-5 {
     padding: 4rem 0;
+}
+
+.bold {
+    font-weight:bold;
+}
+
+/*backgrounds and coloured buttons*/
+
+.bg-primary, .btn-primary {
+    background-color: var(--primary-color);
+    color:white;
+}
+.bg-secondary, .btn-secondary {
+    background-color: var(--secondary-color);
+    color:white;
+}
+.bg-dark, .btn-dark {
+    background-color: var(--dark-color);
+    color: white;
+}
+.bg-light, .btn-light {
+    background-color: var(--light-color);
+    color: white;
+}
+
+.bg-secondary, .btn-secondary {
+    background-color: var(--primary-color);
+    color:white;
 }
