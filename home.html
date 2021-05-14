@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <title>NutriClean</title>
     <link rel="stylesheet" href="home.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+<!--    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">-->
 <!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
-<!--    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 </head>
 <body>
 <!--NavBar-->
 <div class="navbar">
-    <div class="container flex">
-        <h1 class="logo">Logo</h1>
+    <div class="navbar-inner">
+            <img src="https://res.cloudinary.com/dnsof9xnr/image/upload/v1620597882/NutriKitchenLogo.jpg">
         <h3>Tel: 0161 584 284</h3>
         <h3>Email: email@nutriclean.com</h3>
-        <nav>
+        <nav class="links-nav">
             <ul>
                 <li><a href="home.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -73,41 +73,42 @@
 
 <section class="services">
     <div class="container">
-        <h3 class="services-heading text-center">
-            NutriClean text heading welcome here are services we offer please call if you would like to book
-        </h3>
+        <h1 class="services-heading text-center md text-center bold">
+           Services we offer
+        </h1>
         <div class="grid grid-3 text-center my-4 ">
             <div>
-                <i class="fas fa-pump-soap"></i>
-                <h3>one off</h3>
-                <p class="text-secondary">tex here</p>
+                <i class='fas fa-pump-soap lg'></i>
+                <h2 class="bold">One off</h2>
+                <p class="text-secondary">Thorough all day clean, to make your house sparkle from top to bottom</p>
             </div>
             <div>
-                <i class="fas fa-soap"></i>
-                <h3>weekly</h3>
-                <p>text here</p>
+                <i class='fas fa-soap lg'></i>
+                <h2 class="bold">Weekly</h2>
+                <p>Thorough all day clean, to make your house sparkle from top to bottom</p>
             </div>
             <div>
-                <i class="fas fa-pump-soap"></i>
-                <h3>bi-weekly</h3>
-                <p class="text-secondary">text here</p>
+                <i class="fas fa-pump-soap lg"></i>
+                <i class="fas fa-pump-soap lg"></i>
+                <h2 class="bold">Bi-weekly</h2>
+                <p class="text-secondary">Thorough all day clean, to make your house sparkle from top to bottom</p>
             </div>
         </div>
-        <div class="grid grid-3 text-center my-4 ">
+        <div class="grid text-center my-4 ">
             <div>
-                <i class="fab fa-leanpub"></i>
-                <h3>deep-clean</h3>
-                <p class="text-secondary">tex here</p>
+                <i class="fas fa-hand-sparkles lg"></i>
+                <h2>Deep-clean</h2>
+                <p class="m-1 text-secondary">Thorough all day clean, to make your house sparkle from top to bottom</p>
             </div>
+<!--            <div>-->
+<!--                <i class="fas fa-broom lg"></i>-->
+<!--                <h2>Home-ironing service</h2>-->
+<!--                <p>text here</p>-->
+<!--            </div>-->
             <div>
-                <i class="fas fa-broom fa-3x"></i>
-                <h3>home-ironing service</h3>
-                <p>text here</p>
-            </div>
-            <div>
-                <i class="fas fa-hand-sparkles"></i>
-                <h3>deep clean</h3>
-                <p class="text-secondary">text here</p>
+                <i class='fas far fa-clipboard lg'></i>
+                <h2>Consultation</h2>
+                <p class="m-1 text-secondary">Free consultation to asses your needs for your home</p>
             </div>
         </div>
 
@@ -132,7 +133,6 @@
             <div class="card-wrapper">
                 <div class="card"></div>
             </div>
-
             <div class="quote">
                 <p>
                     We aim to do everything we can to keep you and our cleaners safe from coronavirus.
@@ -145,8 +145,8 @@
     </section>
 <!--testimonials -->
     <section class="testimonials">
-        <h2 class="md text-center my-2 bold">Testimonials
-        </h2>
+        <h1 class="md text-center my-2 bold">Testimonials
+        </h1>
         <div class="container flex">
             <div class="card">
                 <p>Simple and easy-to-use app, perfect for my commute into work. Saves on stress of having to find a space in the morning in such a difficult area to find parking.</p>
@@ -154,6 +154,7 @@
                     <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"/>
                 </div>
                 <h3 class="bold">Robyn</h3>
+                <span>Audenshaw, Manchester</span>
             </div>
             <div class="card">
                 <p>The house looked spotless - Robyn</p>
@@ -161,6 +162,7 @@
                     <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"/>
                 </div>
                 <h3 class="bold">Robyn</h3>
+                <span>Audenshaw, Manchester</span>
             </div>
 
             <div class="card">
@@ -169,6 +171,7 @@
                     <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"/>
                 </div>
                 <h3 class="bold">Robyn</h3>
+                <span>Audenshaw, Manchester</span>
             </div>
             <div class="card">
                 <p>happy customer 1</p>
@@ -182,6 +185,7 @@
                     <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"/>
                 </div>
                 <h3 class="bold">Robyn</h3>
+                <span>Audenshaw, Manchester</span>
             </div>
             <div class="card">
                 <p>happy customer 1</p>
@@ -189,14 +193,15 @@
                     <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"/>
                 </div>
                 <h3 class="bold">Robyn</h3>
+                <span>Audenshaw, Manchester</span>
             </div>
         </div>
     </section>
 <!--footer-->
-    <Footer class="bg-dark py-5">
+    <Footer class="bg-primary py-5 footer">
         <div class="container grid grid-3">
           <div>
-              <h1>Loruki</h1>
+              <h1>NutriClean</h1>
               <p> Copyright &copy; 2021</p>
           </div>
             <nav>
@@ -206,10 +211,14 @@
                     <li><a href="reviews.html">Testimonials</a></li>
                 </ul>
             </nav>
-            <div>
-                <a href="#"><i fab fa-twitter fa-2x> </i></a>
-                <a href="#"><i fab fa-facebook fa-2x> </i></a>
-                <a href="#"><i fab fa-instagram fa-2x> </i></a>
+            <div class="social">
+                <a> <i class="fab fa-twitter"></i>Twitter</a>
+                <a> <i class="fab fa-instagram"></i>Instagram</a>
+                <a><i class="fa fa-facebook-f"></i>Facebook</a>
+                <i class="fab fa-facebook-f"></i>
+
+
+
             </div>
         </div>
     </Footer>

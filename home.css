@@ -7,6 +7,7 @@
     --dark-color: green;
     --light-color: lightgray;
 }
+
 * {
     box-sizing:border-box;
     padding:0;
@@ -40,12 +41,35 @@ img {
 
 /*nav bar styles */
 
+.navbar {
+    background-color: black;
+    color: white;
+    height: 80px;
+}
+
+.navbar-inner {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+/*.navbar .navbar-inner .links-nav a {*/
+/*    color: white;*/
+/*}*/
+
+.navbar .navbar-inner img {
+    height: 80px;
+    width: 80px;
+    border-radius: 60px;
+}
+
+
 .navbar ul {
     display: flex;
 }
 
 .navbar a {
-    color: black;
+    color: white;
     padding: 10px;
     margin: 0 5px;
     text-decoration: none;
@@ -56,11 +80,6 @@ img {
     text-decoration: none;
 }
 
-.navbar {
-    background-color: var(--primary-color);
-    color: black;
-    height: 70px;
-}
 
 
 .navbar .flex {
@@ -209,12 +228,16 @@ img {
     margin-bottom: 10px;
     height: 80px;
 }
+
 .testimonials .card:hover {
     transform: translateY(-15px)
 }
 
-
-
+/* footer styles*/
+.footer .social  a {
+    margin: 0 10px;
+    color: white;
+}
 
 
 /* Utilities*/
@@ -277,6 +300,7 @@ img {
 .btn:hover {
     transform:scale(0.90);
 }
+
 
 /* margin */
 
@@ -369,26 +393,74 @@ img {
     font-weight:bold;
 }
 
+
+
 /*backgrounds and coloured buttons*/
 
-.bg-primary, .btn-primary {
+.bg-primary,
+.btn-primary {
     background-color: var(--primary-color);
-    color:white;
+    color: white;
 }
-.bg-secondary, .btn-secondary {
+.bg-secondary,
+.btn-secondary {
     background-color: var(--secondary-color);
-    color:white;
+    color: white;
 }
-.bg-dark, .btn-dark {
+.bg-dark,
+.btn-dark {
     background-color: var(--dark-color);
     color: white;
 }
-.bg-light, .btn-light {
+.bg-light,
+.btn-light {
     background-color: var(--light-color);
     color: white;
 }
 
-.bg-secondary, .btn-secondary {
+.bg-secondary,
+.btn-secondary {
     background-color: var(--primary-color);
-    color:white;
+    color: white;
 }
+
+.lead {
+    font-size: 20px;
+}
+
+.sm {
+    font-size: 1rem;
+}
+
+.md {
+    font-size: 2rem;
+}
+
+.lg {
+    font-size: 3rem;
+}
+
+.xl {
+    font-size:4px;
+}
+
+/*links*/
+
+.bg-primary a,
+.btn-primary a,
+.btn-secondary a,
+.bg-dark a,
+.btn-dark a,
+.bg-light a,
+.btn-light a,
+.bg-secondary a,
+.btn-secondary a {
+    color: white;
+}
+
+/*icons*/
+.fas {
+    color: var(--primary-color);
+}
+
+
