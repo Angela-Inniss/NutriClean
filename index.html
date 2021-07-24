@@ -16,11 +16,11 @@
 <div class="navbar">
     <div class="navbar-inner">
             <img src="https://res.cloudinary.com/dnsof9xnr/image/upload/v1620597882/NutriKitchenLogo.jpg">
-        <h3>Tel: 0161 584 284</h3>
-        <h3>Email: email@nutriclean.com</h3>
+        <h4>Tel: 0161 584 284</h4>
+        <h4>Email: email@nutriclean.com</h4>
         <nav class="links-nav">
             <ul>
-                <li><a href="home.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -39,39 +39,49 @@
                Professional cleaner covering Tameside and other areas.
                Professional cleaner covering Tameside and other areas.
            </p>
-<!--           <p> Call us on 01613829847</p>-->
-<!--           <p>email: kat@live.com</p>-->
-<!--           <p>or Request a clean and get a call back</p>-->
-           <a href="features.html" class="btn btn-outline">
-               Read More
+
+           <a href="#services" class="btn btn-outline">
+               Services
            </a>
        </div>
         <div class="showcase-form card">
             <h2>Request a clean</h2>
-           <form>
-               <div class="form-control">
-                   <input type="text" name="name" placeholder="Name" required>
-               </div>
-               <div class="form-control">
-                   <input type="email" name="email" placeholder="Email" required>
-               </div>
-               <div class="form-control">
-                   <input type="text" name="service" placeholder="Service required" required>
-               </div>
-
-<!--               <div class="form-control" id="no-margin">-->
-<!--                   <textarea id="w3review" name="w3review" >-->
-<!--                      add text-->
-<!--                   </textarea>-->
+<!--           <form>-->
+<!--               <div class="form-control">-->
+<!--                   <input type="text" name="name" placeholder="Name" required>-->
 <!--               </div>-->
-               <input type="submit" value="Send" class="btn btn-primary"/>
-           </form>
+<!--               <div class="form-control">-->
+<!--                   <input type="email" name="email" placeholder="Email" required>-->
+<!--               </div>-->
+<!--               <div class="form-control">-->
+<!--                   <input type="text" name="service" placeholder="Service required" required>-->
+<!--               </div>-->
+
+<!--&lt;!&ndash;               <div class="form-control" id="no-margin">&ndash;&gt;-->
+<!--&lt;!&ndash;                   <textarea id="w3review" name="w3review" >&ndash;&gt;-->
+<!--&lt;!&ndash;                      add text&ndash;&gt;-->
+<!--&lt;!&ndash;                   </textarea>&ndash;&gt;-->
+<!--&lt;!&ndash;               </div>&ndash;&gt;-->
+<!--               <input type="submit" value="Send" class="btn btn-primary"/>-->
+<!--           </form>-->
+            <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xbjqgbry" method="post">
+                <fieldset id="fs-frm-inputs">
+                    <label for="full-name">Full Name</label>
+                    <input type="text" name="name" id="full-name" placeholder="Joe Bloggs" required="">
+                    <label for="email-address">Email Address</label>
+                    <input type="email" name="_replyto" id="email-address" placeholder="joe@gmail.com" required="">
+                    <label for="message">Message</label>
+                    <textarea rows="1" name="message" id="message" placeholder="Send a message" required=""></textarea>
+                    <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                </fieldset>
+                <input type="submit" value="Submit" class="btn btn-primary">
+            </form>
         </div>
     </div>
 </section >
 
 
-<section class="services">
+<section class="services" id="services">
     <div class="container">
         <h1 class="services-heading text-center md text-center bold">
            Services we offer
@@ -100,12 +110,6 @@
                 <h2>Deep-clean</h2>
                 <p class="m-1 text-secondary">Thorough all day clean, to make your house sparkle from top to bottom</p>
             </div>
-<!--            <div>-->
-<!--                <i class="fas fa-broom lg"></i>-->
-<!--                <h2>Home-ironing service</h2>-->
-<!--                <p>text here</p>-->
-<!--            </div>-->
-            <div>
                 <i class='fas far fa-clipboard lg'></i>
                 <h2>Consultation</h2>
                 <p class="m-1 text-secondary">Free consultation to asses your needs for your home</p>
@@ -129,16 +133,19 @@
 
     <!--about Nutri clean -->
     <section class="about">
-        <div class="container flex">
+        <div class="container flex about-inner">
             <div class="card-wrapper">
-                <div class="card"></div>
+                <div class="card">
+                    <img src="https://res.cloudinary.com/dnsof9xnr/image/upload/v1626961844/Screenshot_2021-07-22_at_14.48.28.png"/>
+                </div>
             </div>
             <div class="quote">
                 <p>
-                    We aim to do everything we can to keep you and our cleaners safe from coronavirus.
-                    Your cleaner can clean your home at a time convenient to you. If you are able to go out then your
-                    home can be cleaned in your absence. Alternatively, if you are home during your clean,
-                    you can stay in one room and your cleaner will maintain the recommended 2 metre social distance.
+                    Hi I'm Kat! I am a mum of one and and wife who loves to clean! There is nothing better than coming home to a dust-free, beautifully smelling home, and I created this business
+                    to share this feeling with everyone.
+                    In my spare time I like spending time with family and friends, walking and visiting xxx?
+                    Please don't hesitate to drop me a line and I will see if i can fit you in, alternatively give me a call on 0784984372832.
+                    Speak soon, Kat x
                 </p>
             </div>
         </div>
