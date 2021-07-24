@@ -1,6 +1,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
+@media screen and (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
 :root {
     --primary-color: #78AB46;
     --secondary-color: #013220;
@@ -14,11 +20,16 @@
     margin:0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Lato';
     color:#333;
     line-height:1.6
 }
+
 
 ul {
     list-style: none;
@@ -38,6 +49,11 @@ h1,h2 {
 img {
     width:100%;
 }
+
+fieldset {
+    border: 0;
+}
+
 
 /*nav bar styles */
 
@@ -132,6 +148,8 @@ img {
     padding: 15px;
     font-size: initial;
     width: 100%;
+    resize: none;
+    margin-bottom: 10px;
 }
 
 .showcase-form input:focus,
@@ -173,7 +191,7 @@ img {
 }
 
 .about .card {
-    height: 300px;
+    height: max-content; /*so the image of the owner does not overflow height wise - replaced height:300px*/
     width: 330px;
 }
 
@@ -325,7 +343,6 @@ img {
         justify-self: center;
         margin: auto;
         width: 400px;
-
     }
 }
 
@@ -359,6 +376,14 @@ img {
     .links-nav {
         padding: 10px;
         background-color: black;
+    }
+
+  .about-inner {
+    display: block;
+  }
+
+    .about .card {
+        width: auto;
     }
 }
 /* margin */
