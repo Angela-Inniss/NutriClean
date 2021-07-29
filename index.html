@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <title>NutriClean</title>
     <link rel="stylesheet" href="home.css">
-<!--    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">-->
-<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="utilities.css">
+    <link rel="stylesheet" href="media-queries.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 <body>
-
     <!--NavBar-->
     <div class="navbar">
         <div class="navbar-inner">
@@ -40,7 +40,6 @@
                    Professional cleaner covering Tameside and other areas.
                    Professional cleaner covering Tameside and other areas.
                </p>
-
                <a href="#services" class="btn btn-outline">
                    Services
                </a>
@@ -62,7 +61,6 @@
             </div>
         </div>
     </section>
-
     <section class="services" id="services">
         <div class="container">
             <h1 class="services-heading text-center md text-center bold">
@@ -113,10 +111,13 @@
                     </p>
                 </div>
         </section>
-
         <!--about Nutri clean -->
         <section class="about">
+            <h1 class="services-heading text-center md text-center bold">
+                About
+            </h1>
             <div class="container flex about-inner">
+
                 <div class="card-wrapper">
                     <div class="card">
                         <img src="https://res.cloudinary.com/dnsof9xnr/image/upload/v1626961844/Screenshot_2021-07-22_at_14.48.28.png"/>
@@ -133,12 +134,11 @@
                 </div>
             </div>
         </section>
-
     <!--testimonials -->
-        <section class="testimonials">
+        <section class="testimonials" id="desktop-testimonials">
             <h1 class="md text-center my-2 bold">Testimonials
             </h1>
-            <div class="container flex">
+            <div class="container flex cards-test">
                 <div class="card">
                     <p>Simple and easy-to-use app, perfect for my commute into work. Saves on stress of having to find a space in the morning in such a difficult area to find parking.</p>
                     <div class="img-container">
@@ -155,9 +155,8 @@
                     <h3 class="bold">Robyn</h3>
                     <span>Audenshaw, Manchester</span>
                 </div>
-
                 <div class="card">
-                    <p>The lovely katherine came in to give our house a good clean and it looks lovely (I'd be so lost without you!)</p>
+                    <p>The lovely katherine came in to give our house a good clean and it looks lovely (I'd be so lost without you!</p>
                     <div class="img-container">
                         <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"/>
                     </div>
@@ -165,13 +164,7 @@
                     <span>Audenshaw, Manchester</span>
                 </div>
                 <div class="card">
-                    <p>happy customer 1</p>
-                    <div class="img-container">
-                        <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"/>
-                    </div>
-                </div>
-                <div class="card">
-                    <p>happy customer 1</p>
+                    <p>The lovely katherine came in to give our house a good clean and it looks lovely (I'd be so lost without you!</p>
                     <div class="img-container">
                         <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"/>
                     </div>
@@ -179,7 +172,15 @@
                     <span>Audenshaw, Manchester</span>
                 </div>
                 <div class="card">
-                    <p>happy customer 1</p>
+                    <p>The lovely katherine came in to give our house a good clean and it looks lovely (I'd be so lost without you!</p>
+                    <div class="img-container">
+                        <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"/>
+                    </div>
+                    <h3 class="bold">Robyn</h3>
+                    <span>Audenshaw, Manchester</span>
+                </div>
+                <div class="card">
+                    <p>The lovely katherine came in to give our house a good clean and it looks lovely (I'd be so lost without you!</p>
                     <div class="img-container">
                         <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"/>
                     </div>
@@ -188,7 +189,57 @@
                 </div>
             </div>
         </section>
+    <!-- Slider main container -->
+    <div class="swiper-container container my-4" id="mobile-testimonials" >
+        <h1 class="md text-center my-2 bold">Testimonials
+        </h1>
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <div class="card">
+                    <h3>happy customer 1</h3>
+                    <p>The lovely katherine came in to give our house a good clean and it looks lovely (I'd be so lost without you!)</p>
+                    <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"/>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card">
+                    <h3>happy customer 2</h3>
+                    <p>The lovely katherine came in to give our house a good clean and it looks lovely (I'd be so lost without you!)</p>
+                    <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"/>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card">
+                    <h3>happy customer 3</h3>
+                    <p>The lovely katherine came in to give our house a good clean and it looks lovely (I'd be so lost without you!)</p>
+                    <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"/>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card">
+                    <h3>happy customer 4</h3>
+                    <p>The lovely katherine came in to give our house a good clean and it looks lovely (I'd be so lost without you!)</p>
+                    <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"/>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card">
+                    <h3>happy customer 5</h3>
+                    <p>The lovely katherine came in to give our house a good clean and it looks lovely (I'd be so lost without you!)</p>
+                    <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"/>
+                </div>
+            </div>
+            .....
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
 
+<!--        &lt;!&ndash; If we need navigation buttons &ndash;&gt;-->
+<!--        <div class="swiper-button-prev"></div>-->
+<!--        <div class="swiper-button-next"></div>-->
+    </div>
     <!--footer-->
         <Footer class="bg-primary py-5 footer">
             <div class="container grid grid-3">
@@ -206,10 +257,39 @@
                 <div class="social" id="contact">
                     <a> <i class="fab fa-twitter"></i>Twitter</a>
                     <a> <i class="fab fa-instagram"></i>Instagram</a>
-                    <a><i class="fa fa-facebook-f"></i>Facebook</a>
-                    <i class="fab fa-facebook-f"></i>
+                    <a><i class="fab fa-facebook"></i>Facebook</a>
                 </div>
             </div>
         </Footer>
-    </body>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper('.swiper-container', {
+        effect: 'cube',
+        grabCursor: true,
+        cubeEffect: {
+          shadow: true,
+          slideShadows: true,
+          shadowOffset: 20,
+          shadowScale: 0.94,
+        },
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+      });
+    </script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</body>
 </html>
